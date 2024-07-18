@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/hair.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="booknow.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <title>J Barbeshop</title>
+</head>
+<body>
+    <section class="landing">
+        <nav>
+            <a href="/"><img src="images/wlogo.png" class="logo"></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About</a>
+                <a href="service.html">Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="testimonials.html">Testimonial</a>
+                <a href="team.html">Our Team</a>
+            </div>
+            <a href="booknow.html" class="navbar_btn"><span class="button">Book Now</span></a>
+        </nav>
+    </section>
+
+    <section class="section appoin" id="appointment" aria-label="appointment">
+        <div class="container">
+            <div class="appoin-card">
+                <figure class="class card-banner img-holder" style="--width: 250; --height: 774;"></figure>
+
+                <div class="card-content">
+                    <h2 class="h2 section-title">Make an Appointment</h2>
+                    <p class="section-text">
+                        Book an appointment with us to experience what it's like!
+                    </p>
+
+                    <form action="" id="appointmentForm" class="appoin-form">
+                        <div class="input-wrapper">
+                            <input type="text" name="name" placeholder="Your Full Name" class="input-field">
+                            <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+                        </div>
+                        <div class="input-wrapper">
+                            <input type="text" name="phone" placeholder="Phone Number" required class="input-field">
+                            <select name="category" class="input-field">
+                                <option value="Select Service">Select Service</option>
+                                <option value="haircut">Haircut</option>
+                                <option value="seniors">Seniors</option>
+                                <option value="kids">Kids</option>
+                                <option value="edge up">Edge Up</option>
+                                <option value="shampoo">Shampoo</option>
+                                <option value="facial & massage">Facial & Massage</option>
+                                <option value="straight-razor shave">Straight-Razor Shave</option>
+                                <option value="moustache trim">Moustache Trim</option>
+                                <option value="neck shave">Neck Shave</option>
+                                <option value="royal beard grooming">Royal Beard Grooming</option>
+                                <option value="classic cutu & beard sculpt">Classic Cut & Beard Sculpt</option>
+                            </select>
+                        </div>
+                        <input type="date" name="date" required class="input-field date">
+                        <textarea name="message" placeholder="Write Message" class="input-field"></textarea>
+                        <button type="submit" class="form-btn">
+                            <span class="span">Appointment Now</span>
+                            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                        </button>
+                    </form>
+                </div>
+
+                <figure class="class card-banner img-holder" style="--width: 250; --height: 774;"></figure>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Select the form element
+        const form = document.getElementById('appointmentForm');
+
+        // Add event listener for form submission
+        form.addEventListener('submit', function(event) {
+            // Prevent default form submission
+            event.preventDefault();
+
+            // Display alert message
+            alert("Booking has been submitted. Please wait for a confirmation on your phone number. Thank you");
+
+            // Reset the form after alert
+            form.reset();
+
+            // Optional: Redirect or reload the page
+            window.location.reload();
+        });
+    </script>
+</body>
+</html>
